@@ -1,0 +1,82 @@
+{
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "parser": "@typescript-eslint/parser"
+  },
+  "plugins": ["vue"],
+  "extends": [
+    "sunasteriskrnd"
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["~", "./app"]
+        ],
+        "extensions": [".ts", ".js", ".json", ".vue"]
+      },
+      "webpack": {}
+    }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "sunasteriskrnd/typescript"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": [
+              "**/nuxt.config.ts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.vue"
+      ],
+      "extends": [
+        "sunasteriskrnd/vue3",
+        "sunasteriskrnd/nuxt"
+      ],
+      "rules": {
+        "vue/multi-word-component-names": [
+          "off"
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.vue",
+        "*.ts",
+        "*.js"
+      ],
+      "rules": {
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "js": "never",
+            "ts": "never",
+            "vue": "never"
+          }
+        ]
+      }
+    }
+  ],
+  "env": {
+    "node": true,
+    "vue/setup-compiler-macros": true
+  }
+}
