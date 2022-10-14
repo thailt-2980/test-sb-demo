@@ -38,6 +38,12 @@ make devrun
 
 The web app will be available at your configured domain and port, by default it's `project.localhost:8000`.
 
+Exec to php container
+
+```sh
+make devshphp
+```
+
 ## Read more
 
 Relevant documentations:
