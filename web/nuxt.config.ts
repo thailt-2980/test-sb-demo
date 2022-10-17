@@ -6,10 +6,6 @@ export default defineNuxtConfig({
 
     srcDir: path.resolve(__dirname, 'app'),
 
-    css: [
-        'vuetify/styles',
-    ],
-
     app: {
         head: {
             title: 'Laravel Nuxt 3 Starter',
@@ -41,6 +37,17 @@ export default defineNuxtConfig({
 
     build: {
         transpile: ['vuetify'],
+    },
+
+    css: [
+        'vuetify/styles',
+        '~/assets/scss/index.scss',
+    ],
+
+    postcss: {
+        config: true,
+
+        plugins: {},
     },
 
     vite: {
