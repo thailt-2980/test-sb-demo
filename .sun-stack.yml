@@ -1,5 +1,5 @@
-os:
+utilities:
    - centos:8.4
-database:
+data:
    - mysql:8.0
    - mongodb
