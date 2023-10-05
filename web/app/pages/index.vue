@@ -1,6 +1,7 @@
 <template>
     <div>
         {{ auth.user ? `Hello ${auth.user.id}` : `Hello guest` }}
+        sdfsdfsdfsfsd
     </div>
 </template>
 
