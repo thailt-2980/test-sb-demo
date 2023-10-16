@@ -1,5 +1,5 @@
 utilities:
    - centos:8.4
-data:
+database:
    - mysql:8.0
    - mongodb
