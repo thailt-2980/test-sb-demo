@@ -2,6 +2,7 @@
     <div>
         {{ auth.user ? `Hello ${auth.user.id}` : `Hello guest` }}
         sdfsdfsdfsfsd
+        <p>Test</p>
     </div>
 </template>
 
