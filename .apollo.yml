@@ -1,16 +1,16 @@
 techstack:
    cloud:
       aws: 
-         - AWS Elastic Compute Cloud (EC2),
-         - AWS EC2 Container Service (ECS),
-         - AWS EC2 Container Service (ECS1),
-         - AWS EC2 Container Service (ECS2),
-         - AWS EC2 Container Service (ECS3),
-         - AWS EC2 Container Service (ECS4),
+         - AWS Elastic Compute Cloud (EC2)
+         - AWS EC2 Container Service (ECS)
+         - AWS EC2 Container Service (ECS1)
+         - AWS EC2 Container Service (ECS2)
+         - AWS EC2 Container Service (ECS3)
+         - AWS EC2 Container Service (ECS4)
          - AWS EC2 Container Service (ECS5)
 
       azure: 
-         - Azure Virtual Machines,
+         - Azure Virtual Machines
          - Azure Load Balancer
                
    utilities:
