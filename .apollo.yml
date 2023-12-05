@@ -1,3 +1,9 @@
+config:
+  ignore:
+    files:
+      - index.html
+    commits:
+      - <commit_hash>
 techstack:
    cloud:
       aws: 
