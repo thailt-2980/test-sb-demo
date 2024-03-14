@@ -21,6 +21,6 @@ techstack:
                
    utilities:
       - centos:8.4
-   database:
+   Database / NoSQL / Cache:
       - mysql:8.0
       - mongodb
